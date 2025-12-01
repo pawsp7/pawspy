@@ -1,0 +1,3 @@
+I dont know why the outline is so minimal on the MagicLen but the display within the other validator shows it as expected
+
+I arranged headers with priority for display not ordering

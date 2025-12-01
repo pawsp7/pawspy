@@ -1,0 +1,139 @@
+h1
+{
+    /* border: 1px solid pink; */
+    text-decoration: none;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+h2, h3
+{
+    text-align: center;
+    font-size: 22.5px;
+}
+
+h2
+{
+    color:rgb(184, 93, 161);
+    text-shadow: rgb(225, 189, 225) 2px -2px 2px;
+}
+
+h3
+{
+    color: palevioletred;
+    text-decoration: underline 2px dashed pink;
+}
+
+body
+{
+    background-color: rgb(244, 231, 247);
+}
+
+p
+{
+    color:rgb(206, 111, 206);
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+/* not working ^^^^ */
+
+a:hover
+{
+    color: white;
+    text-shadow: rgb(65, 33, 65) 2px 1px 2px;
+}
+
+img
+{
+    padding: 10px 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.header, .footer
+{
+    display: flex;
+    justify-content: center;
+    border: 4px dashed pink;
+    background-color:lavenderblush;
+}
+
+#contact, #home
+{
+    text-decoration: double underline 2px #e4a0c9;
+}
+/* could not combine # and .: as selectors */
+.home:hover, .contact:hover
+{
+    transform: scale(1.2);
+    text-decoration: double underline 2px #e4a0c9
+}
+
+.home, .contact
+{
+    font-size: large;
+    color: plum;
+    transition: transform .7s;
+}
+
+div /* affects all divs */
+{
+    align-content:center;
+    justify-content:space-around;
+}
+
+div span /* affects only the text within the flexbox */
+{
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 45px;
+    color:rgb(205, 108, 205);
+    text-shadow: rgb(205, 132, 205) 2px 1px 2px;
+}
+
+.left:hover
+{
+    transform: scale(1.2) rotate(-20deg)
+}
+
+.right:hover
+{
+    transform: scale(1.2) rotate(20deg)
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px double pink;
+    border-width: 10px 0 0 0; /* stylistic page break */
+}
+
+label
+{
+    color: palevioletred;
+}
+
+.formInput[type=text]
+{
+    padding: 25px;
+}
+
+input[type=submit]
+{
+  background-color: rgba(255, 192, 203, 0.534);
+  border: 3px solid lavenderblush;
+  color: rgb(184, 93, 161);
+  padding: 8px 32px;
+  margin: 10px 20px 20px;
+}
+
